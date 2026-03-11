@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#b4820e",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221d10",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 border-b border-slate-200 dark:border-primary/20 sticky top-0 z-50">
+<div class="text-primary flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</div>
+<h1 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center">Styled by Gaby Hosken</h1>
+<div class="size-12 shrink-0"></div>
+</header>
+<main class="flex-1 pb-24">
+<!-- Hero Section for Testimonials -->
+<section class="px-4 pt-10 pb-6 text-center">
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Voices of Transformation</h2>
+<h3 class="text-slate-900 dark:text-slate-100 text-3xl font-extrabold leading-tight tracking-tight">What My Clients Say</h3>
+<p class="text-slate-600 dark:text-slate-400 mt-4 max-w-md mx-auto">Discover how refined styling has empowered women across the United States to find their true identity.</p>
+</section>
+<!-- Testimonials Grid -->
+<section class="px-4 py-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+<!-- Hevelin -->
+<div class="bg-white dark:bg-primary/5 p-6 rounded-xl border border-slate-200 dark:border-primary/10 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 border-2 border-primary" data-alt="Portrait of Hevelin, a smiling woman" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAw7vq48FVd6DyLOHZ0q2wJm0aEagEqysGbDEgBYfkZWBwT-09HD-V2-l4t_9TBF9kDOcWpyRWqfi4Q-jDTnD_eM42vRMnuDF6xNDevxoJ06IakIbuQ0d6gn3LhGSVvrj2Sg4O_M2wA9HdHsomRZtwm3ImxPjzR2zbiEcQXboqW9Z9vE-uRl1y26t_iEKa_W4A8ydMIp8jdw2br0aGgFLw7oquenmAxjbSYaFTNksYZROKwioTute4lARlM-gqCb_lxOcJ5-Lt27i0");'></div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 font-bold">Hevelin</p>
+<p class="text-slate-500 dark:text-primary/60 text-xs">2 months ago</p>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+</div>
+<p class="text-slate-700 dark:text-slate-300 italic leading-relaxed">"Gaby transformed my wardrobe and my confidence. Her eye for detail is unmatched."</p>
+</div>
+<!-- Saxa -->
+<div class="bg-white dark:bg-primary/5 p-6 rounded-xl border border-slate-200 dark:border-primary/10 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 border-2 border-primary" data-alt="Portrait of Saxa, a sophisticated professional woman" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuABmYFBeqChE2VqOa-frCCo5tHI-8X04xCGWTw7WP_bNzET-vLeXiaVXsyoHVZuKH5XcGAa0MJbsV-1rxedBLY9mqT__T9IY62DUA6tRLLIBDUU3zeHPEewRTIi6MP0NEP1k-CUVW64_XM9m9Hygp-_u_1K7sYJfpq1vGzWd_uvRZGEB05Gmc69Hm5GZKQYFW0hmz14cPTH1PzhM4xUTDh72bGS1I3B-zNxve_cihEDEnbMek-qfR0_ppyjafhI9lzI__-7QORP7gM");'></div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 font-bold">Saxa</p>
+<p class="text-slate-500 dark:text-primary/60 text-xs">1 month ago</p>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+</div>
+<p class="text-slate-700 dark:text-slate-300 italic leading-relaxed">"The most professional styling experience I have ever had. Truly refined."</p>
+</div>
+<!-- Debora -->
+<div class="bg-white dark:bg-primary/5 p-6 rounded-xl border border-slate-200 dark:border-primary/10 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 border-2 border-primary" data-alt="Portrait of Debora, elegant and confident" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnFvK5HS6yaSkuJuOFd4MKwxtRMDzAAXR0pjxtIturw749vUhd4qXDA4ZrRyy7nDjUksFUrnk3vqXnqAOLWSY7BQBjIu12pBwHBhCnmN24MfwOdhZnRNbxLIWSgBft1aeKN7IuD3A_mnyliw5urSlLen0vMiQ6gYu5AxJ2d-s9hdK8KhngCcU_vUURPq6gkI2kjUJnJEJI8Mzv5xWAV_gffVHlSjUxixfnOgk0fPS60HPt5dUIchU6dT41hJvGZtjLw99UabqGZrM");'></div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 font-bold">Debora</p>
+<p class="text-slate-500 dark:text-primary/60 text-xs">3 weeks ago</p>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+</div>
+<p class="text-slate-700 dark:text-slate-300 italic leading-relaxed">"I feel like a new person. Gaby understands personal style perfectly."</p>
+</div>
+<!-- Fernanda -->
+<div class="bg-white dark:bg-primary/5 p-6 rounded-xl border border-slate-200 dark:border-primary/10 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 border-2 border-primary" data-alt="Portrait of Fernanda, posing stylishly" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLEGNI3MIfX8RUNfWHCHK9gUEHuHtokrzV5Na2527gM8mDY_H23yuprtpj3AdwD4ZQCyghxclGY-hOJe2SpAbq2XYHhud1RNuJAPQ5mb31LaBEzB2E7tr9XLrLxDGWOmy6nOy8px7rvmBon1PeWqWnDgqZhsFjCMqtmOMod3ZCXHCMrcj1j9PXXZfe5MIZP9yU_MrCezfVi41B5v8yhUg7GDGCF7LHKaFch2b2j-KpiONV5I8Xd6xcCjMPpQ0j8F6WTopiZ0UQI5Q");'></div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 font-bold">Fernanda</p>
+<p class="text-slate-500 dark:text-primary/60 text-xs">2 weeks ago</p>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+</div>
+<p class="text-slate-700 dark:text-slate-300 italic leading-relaxed">"Sophisticated, elegant, and trustworthy. Highly recommend her services."</p>
+</div>
+<!-- Monica -->
+<div class="bg-white dark:bg-primary/5 p-6 rounded-xl border border-slate-200 dark:border-primary/10 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 border-2 border-primary" data-alt="Portrait of Monica, radiant with happiness" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBq0Gsb8ciFgStPtxuNY4TVIaKoCJSYpYvQUg8JtJRm3_k6GaZD29IZhBoe8pyXanFSCt_eTb3F5CMt6XmFCvAYMxO3fa-J6R3neFDhqP_cShv41MdnxBJxpEziU3GSJ4DvChwUjgmtfXM5nPqWxX6McwmjT97sF8GLaRx3K-LO6EAJiWAOiNfy89aNEaPgurHzZ5BClpOQOIKrkqcMv-RpqBVD2WwaRTlFuU3G9vBkMCbkLSVotZnl8ekYBQzSPfC0bIzV0OwvgA");'></div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 font-bold">Monica</p>
+<p class="text-slate-500 dark:text-primary/60 text-xs">1 week ago</p>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+</div>
+<p class="text-slate-700 dark:text-slate-300 italic leading-relaxed">"Every outfit Gaby put together felt like 'me' but better."</p>
+</div>
+<!-- Karine -->
+<div class="bg-white dark:bg-primary/5 p-6 rounded-xl border border-slate-200 dark:border-primary/10 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 border-2 border-primary" data-alt="Portrait of Karine, professional attire" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuByXCHBsL663ONvk0hsr5MBhjp3Ut6gOuuGi5L0BNA1P8P3i8bfvHzPesoyqv8eL7t4tBD2pX1Kr2BepEwKskDe1uso5TCZJZ1hVFkGMqDeeNdnjVdvox1EDrP9glBChkOAUeVmkAokMeRt4ZCl4kEihNcFnlPNdTKsfOvyi_HbtO1WMqfnV5nvFNsl-8Go3uOslnQRZfms0TUDUs_LfE3UWCo6akbfkdrnX_1FQqVu_QrRuatkljWye2X9_SEqeqYtsM-z9HdGw3A");'></div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 font-bold">Karine</p>
+<p class="text-slate-500 dark:text-primary/60 text-xs">4 days ago</p>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+</div>
+<p class="text-slate-700 dark:text-slate-300 italic leading-relaxed">"A life-changing experience for my professional image."</p>
+</div>
+<!-- Sintia -->
+<div class="bg-white dark:bg-primary/5 p-6 rounded-xl border border-slate-200 dark:border-primary/10 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 border-2 border-primary" data-alt="Portrait of Sintia, expressive and stylish" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBd7QD0t2gWF8tzDCN0tGIh7V-El4va3qrSR8qbN9gZp67W3uMMxiZhVbRFw_M58BhN4E1bW4PqIJvNviZ-juWzZjliq4Dg1RV3TxQ2ILC355X8eSNmQiyXx7aMdWtI86mnPY5i_7kLn02PQTSvoYnuaCB6J-FQTtAQIQ7oTptnLXy0Zow22svNOVxXVEFyk2AlnAZrvKhQyHDxe7e1wYa6xK1xiThc5sz3JxJVf_g60nS12YxsiwsmaAdSOqN14qrlr6Z0ZPrGB1Y");'></div>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 font-bold">Sintia</p>
+<p class="text-slate-500 dark:text-primary/60 text-xs">Yesterday</p>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+</div>
+<p class="text-slate-700 dark:text-slate-300 italic leading-relaxed">"Thank you, Gaby, for helping me find my style identity in the US."</p>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="mt-16 px-4 max-w-4xl mx-auto">
+<div class="bg-white dark:bg-primary/5 rounded-full-xl overflow-hidden border border-slate-200 dark:border-primary/20">
+<div class="p-8 md:p-12">
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Inquiry</h2>
+<h3 class="text-slate-900 dark:text-slate-100 text-3xl font-extrabold leading-tight tracking-tight mb-8">Get in Touch</h3>
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Contact Form -->
+<form class="flex flex-col gap-4">
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Full Name</label>
+<input class="w-full bg-slate-50 dark:bg-background-dark border-slate-200 dark:border-primary/20 rounded-lg p-3 text-slate-900 dark:text-slate-100 focus:ring-primary focus:border-primary" placeholder="Your name" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Email Address</label>
+<input class="w-full bg-slate-50 dark:bg-background-dark border-slate-200 dark:border-primary/20 rounded-lg p-3 text-slate-900 dark:text-slate-100 focus:ring-primary focus:border-primary" placeholder="hello@example.com" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">How can I help?</label>
+<textarea class="w-full bg-slate-50 dark:bg-background-dark border-slate-200 dark:border-primary/20 rounded-lg p-3 text-slate-900 dark:text-slate-100 focus:ring-primary focus:border-primary" placeholder="Tell me about your style goals..." rows="4"></textarea>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-background-dark font-bold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2" type="submit">
+                                Send Message
+                                <span class="material-symbols-outlined">send</span>
+</button>
+</form>
+<!-- Direct Info -->
+<div class="flex flex-col gap-8">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Ready for a refined transformation? Reach out directly for personal styling, wardrobe consultation, or professional image consulting.
+                            </p>
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 p-3 rounded-full text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">Professional Email</h4>
+<p class="text-slate-600 dark:text-slate-400">contact@styledbygaby.com</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 p-3 rounded-full text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-100">Location</h4>
+<p class="text-slate-600 dark:text-slate-400">United States</p>
+</div>
+</div>
+<div class="mt-4 rounded-xl overflow-hidden border border-slate-200 dark:border-primary/20 h-48 relative">
+<div class="absolute inset-0 bg-slate-100 dark:bg-primary/10 flex items-center justify-center" data-location="United States" style="">
+<span class="material-symbols-outlined text-4xl text-primary/40">map</span>
+<p class="text-xs absolute bottom-4 text-slate-400">Service Coverage: All major US Cities</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark border-t border-slate-200 dark:border-primary/20 px-4 py-2 flex items-center justify-between z-50">
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 dark:text-primary/40" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 dark:text-primary/40" href="#">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="text-[10px] font-medium">Services</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="text-[10px] font-medium">Reviews</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 dark:text-primary/40" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+<span class="text-[10px] font-medium">Contact</span>
+</a>
+</nav>
+</div>
+</body></html>
