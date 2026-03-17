@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "surface-bright": "#fbf9f5",
+                "surface-variant": "#e4e2de",
+                "on-primary-fixed": "#1c1b1b",
+                "primary-fixed-dim": "#c8c6c5",
+                "on-tertiary": "#ffffff",
+                "on-background": "#1b1c1a",
+                "on-secondary": "#ffffff",
+                "on-secondary-container": "#775e3c",
+                "inverse-surface": "#30312e",
+                "tertiary-fixed-dim": "#d7c3b0",
+                "secondary": "#725a38",
+                "primary-container": "#1c1b1b",
+                "surface-dim": "#dbdad6",
+                "on-tertiary-container": "#928170",
+                "secondary-fixed-dim": "#e1c298",
+                "on-primary": "#ffffff",
+                "primary": "#000000",
+                "primary-fixed": "#e5e2e1",
+                "surface-container-high": "#eae8e4",
+                "tertiary-fixed": "#f4dfcb",
+                "surface-container-lowest": "#ffffff",
+                "inverse-primary": "#c8c6c5",
+                "surface-container-highest": "#e4e2de",
+                "outline-variant": "#c4c7c7",
+                "surface-container": "#efeeea",
+                "inverse-on-surface": "#f2f0ed",
+                "on-primary-fixed-variant": "#474746",
+                "surface-container-low": "#f5f3ef",
+                "on-primary-container": "#858383",
+                "surface-tint": "#5f5e5e",
+                "on-tertiary-fixed": "#241a0e",
+                "tertiary-container": "#241a0e",
+                "background": "#fbf9f5",
+                "on-error": "#ffffff",
+                "on-secondary-fixed-variant": "#594323",
+                "secondary-fixed": "#ffddb2",
+                "on-error-container": "#93000a",
+                "surface": "#fbf9f5",
+                "tertiary": "#000000",
+                "on-surface-variant": "#444748",
+                "on-secondary-fixed": "#291800",
+                "outline": "#747878",
+                "on-surface": "#1b1c1a",
+                "secondary-container": "#fcdaaf",
+                "error-container": "#ffdad6",
+                "error": "#ba1a1a",
+                "on-tertiary-fixed-variant": "#524436"
+              },
+              fontFamily: {
+                "headline": ["Noto Serif"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; background-color: #fbf9f5; color: #1b1c1a; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif', serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 w-full bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<span class="text-xl font-headline tracking-tight text-primary">Styled by Gaby Hosken</span>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-sm font-label font-medium hover:text-secondary transition-colors" href="#">Home</a>
+<a class="text-sm font-label font-medium hover:text-secondary transition-colors" href="#">About</a>
+<a class="text-sm font-label font-medium hover:text-secondary transition-colors" href="#">Services</a>
+<a class="text-sm font-label font-medium text-secondary" href="#">Corporate Consulting</a>
+<a class="text-sm font-label font-medium hover:text-secondary transition-colors" href="#">Testimonials</a>
+<a class="text-sm font-label font-medium hover:text-secondary transition-colors" href="#">Contact</a>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 text-sm font-label font-bold transition-all hover:bg-primary-container">
+                Book a Consultation
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section: Intentional Asymmetry -->
+<section class="relative py-24 md:py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 z-10">
+<span class="inline-block text-xs font-label tracking-[0.2em] text-secondary mb-6">STRATEGIC CORPORATE ADVISORY</span>
+<h1 class="text-5xl md:text-7xl font-headline leading-[1.1] mb-8 text-on-surface">
+                        The Architecture of <br/><span class="italic">Executive Authority</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed font-body mb-10">
+                        Aligning organizational visual identity with brand credibility. We provide strategic consulting for high-stakes professional environments where visual communication is the foundation of trust and leadership.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 font-label font-bold tracking-wide transition-all hover:opacity-90">
+                            INQUIRE FOR CORPORATE
+                        </button>
+<button class="border border-outline-variant px-8 py-4 font-label font-bold tracking-wide hover:bg-surface-container-low transition-colors">
+                            DOWNLOAD CAPABILITIES
+                        </button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative shadow-2xl">
+<img alt="Confident executive woman in a neutral-toned suit, epitomizing professional authority" class="w-full h-full object-cover grayscale mix-blend-multiply opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpDquLYdlkgpzotcyTbdNT5HMZ0DSXHknBdfFld6gG_ye0WPC6xtzm_peL4AIYUMl5I7sC76OKSgDHtu3dWMHCQzpqtRwOwAVaevs6FIzaKgRuOz6f3r55_KQblLvcEBaTVUTdMb7IhlWJSSPTG4SKmU_95Sp_JfnmzQJPs9DpD-tb3SRLmUJY1IAzGV87eD0e092jZ7TgrT_ZQEv7OZioj73NMhX6aSiaWWNltwD0D-4SbSlkrQXmQNKvpmrhQlmyZQa_gupUCo1v"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent"></div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-8 -left-8 w-48 h-48 border border-secondary/20 hidden lg:block"></div>
+</div>
+</div>
+</section>
+<!-- The Editorial Quote -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-5xl mx-auto px-6">
+<div class="flex gap-12 items-start">
+<div class="w-[2px] h-32 bg-secondary shrink-0 mt-4"></div>
+<div>
+<blockquote class="text-3xl md:text-4xl font-headline italic leading-snug text-on-surface mb-6">
+                            "In elite professional spheres, visual presentation is an intellectual asset. It is the silent language of competence, the visual reinforcement of a company’s strategic promise."
+                        </blockquote>
+<cite class="text-sm font-label tracking-widest text-on-surface-variant block uppercase">— GABY HOSKEN, PRINCIPAL CONSULTANT</cite>
+</div>
+</div>
+</div>
+</section>
+<!-- Corporate Offerings: Bento Grid -->
+<section class="py-32 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-headline mb-4">Core Strategic Solutions</h2>
+<p class="font-label text-sm tracking-widest text-on-surface-variant uppercase">Redefining professional standards for boutique firms and global enterprises</p>
+<div class="w-12 h-[1px] bg-secondary mx-auto mt-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[850px]">
+<!-- Executive Image Consulting -->
+<div class="md:col-span-7 bg-surface-container-lowest p-12 flex flex-col justify-between group cursor-pointer hover:bg-surface-bright transition-all border border-outline-variant/10">
+<div class="max-w-lg">
+<span class="text-xs font-label tracking-widest text-secondary block mb-4 uppercase">01. For C-Suite &amp; Founders</span>
+<h3 class="text-3xl font-headline mb-6">Executive Image Consulting</h3>
+<p class="text-on-surface-variant leading-relaxed font-body mb-8">
+                                Bespoke advisory for senior leaders to refine their personal brand in alignment with organizational objectives. We focus on the psychology of executive presence, board-level communication, and cross-cultural visual literacy.
+                            </p>
+<ul class="space-y-4 font-label text-sm uppercase tracking-tighter text-on-surface">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+                                    Visual Authority Audits
+                                </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+                                    Signature Style Architecture
+                                </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+                                    International Presence Strategy
+                                </li>
+</ul>
+</div>
+<div class="mt-12 overflow-hidden aspect-video md:aspect-auto md:h-72">
+<img alt="Close up of professional textures and a polished executive aesthetic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMi18imSiu3BFn08hy9m2eAEEuVl597GS7SqBi0DIa7Lx8YCVti99f0B_6FlGWyL1wyJfTBIbNJV2FJwrNk03PPAMkUgtiWT-FP6uVMZnzuAxpG4cdp1P6lFJx1AHakuOMjEoX-MHPmO5QZZH7ljzZ52-g2dZArK5gIbYBmyniwV239ubs6n-eKdFlG00VfcGZl4gC50_RF9EPuiJ3VFgOrVjlNHeCnz2tKD1e8bHn-PG_dB9pVCxEulsgZowWDkgLbXMAKsS2XT_Z"/>
+</div>
+</div>
+<!-- Corporate Workshops -->
+<div class="md:col-span-5 bg-primary text-on-primary p-12 flex flex-col justify-between">
+<div>
+<span class="text-xs font-label tracking-widest text-secondary-fixed-dim block mb-4 uppercase">02. Team Excellence</span>
+<h3 class="text-3xl font-headline mb-6 text-white">Corporate Workshops</h3>
+<p class="text-on-primary-container leading-relaxed font-body mb-8">
+                                Interactive sessions designed to institutionalize a standard of excellence. We bridge the gap between individual style and the collective brand identity.
+                            </p>
+</div>
+<div class="space-y-6">
+<div class="p-6 bg-white/5 border border-white/10 hover:border-secondary transition-colors cursor-default">
+<span class="material-symbols-outlined text-secondary block mb-2">schema</span>
+<h4 class="font-label font-bold text-sm mb-1 uppercase tracking-wider">The Credibility Matrix</h4>
+<p class="text-xs text-on-primary-container">Strategic alignment of professional talent with the company’s market positioning.</p>
+</div>
+<div class="p-6 bg-white/5 border border-white/10 hover:border-secondary transition-colors cursor-default">
+<span class="material-symbols-outlined text-secondary block mb-2">psychology_alt</span>
+<h4 class="font-label font-bold text-sm mb-1 uppercase tracking-wider">Visual Psychology</h4>
+<p class="text-xs text-on-primary-container">Understanding the semiotics of professional attire to foster client trust and confidence.</p>
+</div>
+</div>
+</div>
+<!-- Team Masterclasses -->
+<div class="md:col-span-12 bg-surface-container p-12 grid md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1 relative group overflow-hidden">
+<img alt="Strategic consulting session for professional team members" class="w-full aspect-video object-cover grayscale transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxo4plX1AFEsDIQaATyC4zfRnsnYoknU-dbAZdEeDLxPlyHk3IZigm_S2RJuaNCnQcjj7c2-r6OHKlSa7ddOMbLVxlDwiDdVTQzVZQSZDGs7k5Wx1n9kRoAmPmuBiSB43ni0IexRSF1kGzLFsD9ExIXJ6e2tajBz9UU2qYDRS3tUGWxw5HPaus3qDiTjWhEcrYhANhu_AU7hfihOd3DfrzzvansxBWeC7j4vp5VPcU2Ckuj6Fyau6R-RDTl7u7_Pjms39-vBj5Hqz4"/>
+</div>
+<div class="order-1 md:order-2">
+<span class="text-xs font-label tracking-widest text-secondary block mb-4 uppercase">03. Specialized Training</span>
+<h3 class="text-3xl font-headline mb-6">Team Masterclasses</h3>
+<p class="text-on-surface-variant leading-relaxed font-body mb-8">
+                                Deep-dive educational modules focused on maintaining high professional standards across diverse global teams. We provide the tools for your people to represent your brand with confidence and sophisticated intentionality.
+                            </p>
+<button class="font-label font-bold text-sm underline underline-offset-8 hover:text-secondary transition-colors tracking-widest uppercase">
+                                INQUIRE ABOUT CURRICULUM
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section: High Tonal Contrast -->
+<section class="py-24 bg-surface-bright border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div>
+<span class="block text-4xl font-headline mb-2 text-primary">15+</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Years of Strategy</span>
+</div>
+<div>
+<span class="block text-4xl font-headline mb-2 text-primary">200+</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Corporate Entities</span>
+</div>
+<div>
+<span class="block text-4xl font-headline mb-2 text-primary">03</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Working Languages</span>
+</div>
+<div>
+<span class="block text-4xl font-headline mb-2 text-primary">12</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Global Hubs</span>
+</div>
+</div>
+</section>
+<!-- Contact/Inquiry Section -->
+<section class="py-32 bg-white">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-24">
+<div>
+<h2 class="text-4xl font-headline mb-8">Initiate Strategic Dialogue</h2>
+<p class="text-lg text-on-surface-variant mb-12 font-body leading-relaxed">
+                        For firms seeking to elevate their market presence or individual leaders requiring refined personal branding, please submit your inquiry. Our principal will facilitate a preliminary assessment of your strategic needs.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-center gap-6">
+<span class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">mail</span>
+</span>
+<div>
+<h4 class="text-[10px] font-label font-bold uppercase tracking-widest text-on-surface-variant">Strategy Inquiries</h4>
+<p class="font-body">consulting@gabyhosken.com</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</span>
+<div>
+<h4 class="text-[10px] font-label font-bold uppercase tracking-widest text-on-surface-variant">Executive Hubs</h4>
+<p class="font-body">London | Madrid | São Paulo</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-10 md:p-12 border border-outline-variant/10 shadow-sm">
+<form class="space-y-8">
+<div class="grid md:grid-cols-2 gap-8">
+<div class="relative">
+<label class="text-[10px] font-label font-bold uppercase tracking-widest absolute -top-2 left-0 bg-transparent px-1">Principal Contact</label>
+<input class="w-full bg-transparent border-b border-outline py-4 focus:outline-none focus:border-secondary transition-colors font-body" placeholder="Name" type="text"/>
+</div>
+<div class="relative">
+<label class="text-[10px] font-label font-bold uppercase tracking-widest absolute -top-2 left-0 bg-transparent px-1">Organization</label>
+<input class="w-full bg-transparent border-b border-outline py-4 focus:outline-none focus:border-secondary transition-colors font-body" placeholder="Company Name" type="text"/>
+</div>
+</div>
+<div class="relative">
+<label class="text-[10px] font-label font-bold uppercase tracking-widest absolute -top-2 left-0 bg-transparent px-1">Professional Email</label>
+<input class="w-full bg-transparent border-b border-outline py-4 focus:outline-none focus:border-secondary transition-colors font-body" placeholder="email@organization.com" type="email"/>
+</div>
+<div class="relative">
+<label class="text-[10px] font-label font-bold uppercase tracking-widest absolute -top-2 left-0 bg-transparent px-1">Inquiry Mandate</label>
+<select class="w-full bg-transparent border-b border-outline py-4 focus:outline-none focus:border-secondary transition-colors font-body appearance-none">
+<option>Executive One-on-One</option>
+<option>Corporate Workshop</option>
+<option>Team Masterclass</option>
+<option>Speaking Engagement</option>
+</select>
+</div>
+<div class="relative">
+<label class="text-[10px] font-label font-bold uppercase tracking-widest absolute -top-2 left-0 bg-transparent px-1">Strategic Objectives</label>
+<textarea class="w-full bg-transparent border-b border-outline py-4 focus:outline-none focus:border-secondary transition-colors font-body" placeholder="Describe your primary visual communication goals" rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 font-label font-bold tracking-[0.2em] hover:bg-primary-container transition-all uppercase">
+                            Request Strategic Briefing
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-12 mb-16">
+<div>
+<h3 class="text-2xl font-headline mb-6">Styled by Gaby Hosken</h3>
+<p class="max-w-xs text-on-surface-variant text-sm font-body leading-relaxed">
+                        Redefining professional authority through the architectural lens of intentional visual strategy.
+                    </p>
+</div>
+<div class="flex gap-12">
+<div class="flex flex-col gap-3">
+<span class="text-[10px] font-label font-bold tracking-widest uppercase text-on-surface-variant">Navigate</span>
+<a class="text-sm font-body hover:text-secondary" href="#">Home</a>
+<a class="text-sm font-body hover:text-secondary" href="#">Services</a>
+<a class="text-sm font-body hover:text-secondary" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-[10px] font-label font-bold tracking-widest uppercase text-on-surface-variant">Connect</span>
+<a class="text-sm font-body hover:text-secondary" href="#">LinkedIn</a>
+<a class="text-sm font-body hover:text-secondary" href="#">Instagram</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="text-[10px] font-label font-bold tracking-widest uppercase text-on-surface-variant">Legal</span>
+<a class="text-sm font-body hover:text-secondary" href="#">Privacy</a>
+<a class="text-sm font-body hover:text-secondary" href="#">Terms</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/30 text-center">
+<p class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant">
+                    © 2024 Styled by Gaby Hosken. Strategic advisory available globally in English, Portuguese, and Spanish.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
